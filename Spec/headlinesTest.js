@@ -1,4 +1,4 @@
-describe ('Listing Headlines', function() {
+describe ('Headlines', function() {
   this._stories = [
     {
       "webTitle":"Lena Headey: ‘I wanted a better death for Cersei’",
@@ -21,7 +21,8 @@ describe ('Listing Headlines', function() {
       "webUrl":"https://www.theguardian.com/commentisfree/2019/jun/16/how-to-follow-the-maybot-a-droid-pm"
     }
   ]
-  it ('can list a headline', function(){
+  it ('can store headlines', function(){
+
     assert.isEqualTo(this._stories[0].webTitle, "Lena Headey: ‘I wanted a better death for Cersei’");
     assert.isEqualTo(this._stories[0].webUrl, "https://www.theguardian.com/tv-and-radio/2019/jun/16/lena-headey-cersei-death-game-of-thrones-the-flood-interview");
   });
