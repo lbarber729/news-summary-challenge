@@ -7,7 +7,7 @@
 
       var html = '<ul>'
       for (var i = 0; i < this._headlines._stories.length; ++i) {
-        html += "<li><div><a href=" + this._headlines._stories[i].webUrl + ">" + this._headlines._stories[i].webTitle + "</a></div></li>"
+        html += "<li><div><a href=" + this._headlines._stories[i].webUrl + ">" + this._headlines._stories[i].webTitle + "<img src=" + this._headlines._stories[i].fields.thumbnail + "></a></div></li>"
       };
       html += '</ul>'
       return html
